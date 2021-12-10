@@ -1,16 +1,16 @@
 {
-  "name": "restyler/instagram-php-scraper",
+  "name": "fancensus/instagram-php-scraper",
   "description": "Profixied Instagram PHP Scraper. Get account information, photos and videos without any authorization, via smart proxy balancer.",
   "keywords": [
     "instagram",
     "scraper"
   ],
   "type": "library",
-  "homepage": "https://github.com/restyler/instagram-php-scraper/tree/proxified",
+  "homepage": "https://github.com/fancensus/instagram-php-scraper",
   "license": "MIT",
   "authors": [
     {
-      "name": "restyler"
+      "name": "fancensus"
     }
   ],
   "require": {
