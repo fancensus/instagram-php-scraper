@@ -9,10 +9,10 @@ class Endpoints
     const ACCOUNT_PAGE = 'https://www.instagram.com/{username}';
     const MEDIA_LINK = 'https://www.instagram.com/p/{code}';
     const ACCOUNT_MEDIAS = 'https://www.instagram.com/graphql/query/?query_hash=e769aa130647d2354c40ea6a439bfc08&variables={variables}';
-    const ACCOUNT_JSON_INFO = 'https://instagram40.p.rapidapi.com/account-info?username={username}';
+    const ACCOUNT_JSON_INFO = 'https://instagram.apiroad.net/account-info?username={username}';
     const ACCOUNT_ACTIVITY = 'https://www.instagram.com/accounts/activity/?__a=1';
     const MEDIA_JSON_INFO = 'https://www.instagram.com/p/{code}/?__a=1';
-    const MEDIA_JSON_BY_URL = 'https://instagram40.p.rapidapi.com/media-info-by-url?url={url}';
+    const MEDIA_JSON_BY_URL = 'https://instagram.apiroad.net/media-info-by-url?url={url}';
     const MEDIA_JSON_BY_LOCATION_ID = 'https://www.instagram.com/explore/locations/{{facebookLocationId}}/?__a=1&max_id={{maxId}}';
     const MEDIA_JSON_BY_TAG = 'https://www.instagram.com/explore/tags/{tag}/?__a=1&max_id={max_id}';
     const GENERAL_SEARCH = 'https://www.instagram.com/web/search/topsearch/?query={query}&count={count}';
@@ -40,7 +40,7 @@ class Endpoints
 
     // Look alike??
     const URL_SIMILAR = 'https://www.instagram.com/graphql/query/?query_id=17845312237175864&id=4663052';
-    const RAPIDAPI_PROXY_URL = 'https://instagram40.p.rapidapi.com';
+    const APIROAD_PROXY_URL = 'https://instagram.apiroad.net';
 
     const GRAPH_QL_QUERY_URL = 'https://www.instagram.com/graphql/query/?query_id={{queryId}}';
 
@@ -48,7 +48,7 @@ class Endpoints
 
     public static function proxifyLink($url)
     {
-        return static::RAPIDAPI_PROXY_URL . '/proxy?' . http_build_query(['url' => $url]); 
+        return static::APIROAD_PROXY_URL . '/proxy?' . http_build_query(['url' => $url]); 
     }
     /**
      * @param int $count
