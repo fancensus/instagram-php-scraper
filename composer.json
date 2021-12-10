@@ -1,31 +1,28 @@
 {
-  "name": "raiym/instagram-php-scraper",
-  "description": "Instagram PHP Scraper. Get account information, photos and videos without any authorization",
+  "name": "restyler/instagram-php-scraper",
+  "description": "Profixied Instagram PHP Scraper. Get account information, photos and videos without any authorization, via smart proxy balancer.",
   "keywords": [
     "instagram",
     "scraper"
   ],
   "type": "library",
-  "homepage": "https://github.com/raiym/instagram-php-scraper",
+  "homepage": "https://github.com/restyler/instagram-php-scraper/tree/proxified",
   "license": "MIT",
   "authors": [
     {
-      "name": "raiym",
-      "email": "r.kapishev@gmail.com"
+      "name": "restyler"
     }
   ],
   "require": {
-    "php": ">=7.2",
+    "php": ">=5.4.0",
+    "mashape/unirest-php": "3.0.*",
     "ext-curl": "*",
     "ext-json": "*",
-    "psr/simple-cache": "~1.0",
-    "psr/http-client": "~1.0",
-    "guzzlehttp/psr7": "^1.7"
+    "psr/simple-cache": "~1.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "^7.0",
-    "phpfastcache/phpfastcache": "^7.1",
-    "guzzlehttp/guzzle": "^7.2"
+    "phpunit/phpunit": "5.5.*",
+    "phpfastcache/phpfastcache": "^7.1"
   },
   "autoload": {
     "psr-4": {
@@ -36,8 +33,5 @@
     "psr-4": {
       "InstagramScraper\\Tests\\": "tests/"
     }
-  },
-  "support": {
-    "email": "r.kapishev@gmail.com"
   }
 }

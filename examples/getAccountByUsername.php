@@ -3,11 +3,13 @@ require __DIR__ . '/../vendor/autoload.php';
 
 // If account is public you can query Instagram without auth
 
-$instagram = new \InstagramScraper\Instagram(new \GuzzleHttp\Client());
+$instagram = new \InstagramScraper\Instagram();
+
+// set RapidApi key to use https://rapidapi.com/restyler/api/instagram40
+$instagram->setRapidApiKey('YOUR-RAPID-API-KEY');
 
 // For getting information about account you don't need to auth:
-
-$account = $instagram->getAccount('kevin');
+$account = $instagram->getAccountInfo('kevin');
 
 // Available fields
 echo "Account info:\n";
