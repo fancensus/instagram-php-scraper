@@ -1,5 +1,5 @@
 {
-  "name": "fancensus/instagram-php-scraper",
+  "name": "raiym/instagram-php-scraper",
   "description": "Profixied Instagram PHP Scraper. Get account information, photos and videos without any authorization, via smart proxy balancer.",
   "keywords": [
     "instagram",
