@@ -56,7 +56,7 @@ class Instagram
     private $userAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36';
     private $customCookies = null;
 
-    private $rapidApiKey = null;
+    private $ApiRoadKey = null;
 
     /**
      * @param string $username
@@ -246,8 +246,8 @@ class Instagram
 
         }
 
-        if ($this->getRapidApiKey()) {
-            $headers['x-rapidapi-key'] = $this->getRapidApiKey();
+        if ($this->getApiRoadKey()) {
+            $headers['x-apiroad-key'] = $this->getApiRoadKey();
         }
 
         if ($this->getUserAgent()) {
@@ -288,9 +288,9 @@ class Instagram
      *
      * @return string
      */
-    public function getRapidApiKey()
+    public function getApiRoadKey()
     {
-        return $this->rapidApiKey;
+        return $this->ApiRoadKey;
     }
 
     /**
@@ -298,9 +298,9 @@ class Instagram
      *
      * @return string
      */
-    public function setRapidApiKey($key)
+    public function setApiRoadKey($key)
     {
-        return $this->rapidApiKey = $key;
+        return $this->ApiRoadKey = $key;
     }
 
     /**
