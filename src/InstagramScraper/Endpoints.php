@@ -8,7 +8,7 @@ class Endpoints
     const LOGIN_URL = 'https://www.instagram.com/accounts/login/ajax/';
     const ACCOUNT_PAGE = 'https://www.instagram.com/{username}';
     const MEDIA_LINK = 'https://www.instagram.com/p/{code}';
-    const ACCOUNT_MEDIAS = 'https://www.instagram.com/graphql/query/?query_hash=e769aa130647d2354c40ea6a439bfc08&variables={variables}';
+    const ACCOUNT_MEDIAS = 'https://instagram.apiroad.net/account-medias?userid={userId}&first={{count}}&after={{after}}';
     const ACCOUNT_JSON_INFO = 'https://instagram.apiroad.net/account-info?username={username}';
     const ACCOUNT_ACTIVITY = 'https://www.instagram.com/accounts/activity/?__a=1';
     const MEDIA_JSON_INFO = 'https://www.instagram.com/p/{code}/?__a=1';
